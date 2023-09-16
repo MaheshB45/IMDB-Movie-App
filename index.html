@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/imdb-icon.png" type="image/x-icon">
+    <title>IMDB Movie App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div>
+            <h1 class="header">IMDB MOVIE APP</h1>
+        </div>
+    </header>
+
+    <!-- Search Section -->
+    <section>
+        <div class="search-container">
+            <div class="search-bars">
+                <input type="text" id="api" value="37f25a6" placeholder="API_KEY">
+                <img src="./assets/key.png" id="key" alt="key">
+            </div>
+            <div class="search-bars">
+                <input type="text" id="movie" placeholder="Enter Movie Name">
+                <img src="./assets/Search.png" id="search-btn" alt="search">
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Section -->
+    <main>
+        <div class="loader">
+            <div class="buffer hide"></div>
+        </div>
+
+        <div id="movie-container"></div>
+
+        <div class="error"></div>
+    </main>
+
+    <!-- JavaScript Link -->
+    <script src="script.js"></script>
+</body>
+</html>
